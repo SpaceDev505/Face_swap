@@ -50,7 +50,7 @@ with  block:
 block.launch(share=True)
 
 
-gr.mount_gradio_app(app, block, path=custom_path)
+gr.mount_gradio_app(app, block, path='/')
 
 # gradio_app =  gr.routes.App.create_app(block)
 # app.mount(custom_path, gradio_app)
