@@ -21,7 +21,8 @@ from face_detection import select_face
 from face_swap import face_swap
 
 def get_result(inputs_video, inputs_image):
-    src_points, src_shape, src_face = select_face(cv2.imread(inputs_image))
+    # src_points, src_shape, src_face = select_face(cv2.imread(inputs_image))
+    src_points, src_shape, src_face = select_face(inputs_image)
     if src_points is None:
         print('No face detected in the source image !!!')
         exit(-1)
