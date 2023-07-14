@@ -3,9 +3,6 @@ from fastapi import FastAPI
 import gradio as gr
 import os
 import uvicorn
-from generate_audio import generate_audio
-from inference_audio_image import inference2
-from inference_audio_video import inference1
 from face_detection import select_face
 from face_swap import face_swap
 
