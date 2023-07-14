@@ -48,14 +48,13 @@ def get_result(inputs_video, inputs_image):
 block = gr.Blocks().queue()
 with block:
     with gr.Row():
-        gr.Markdown("## Lip Sync")
+        gr.Markdown("## Face Swap")
     with gr.Row():
         with gr.Column():
             inputs_video = gr.Video(label="Original Video", show_label=True)
             inputs_image = gr.Image(source='upload')
             with gr.Row():
-                audioBtn = gr.Button("Generate Audio")
-                runBtn = gr.Button("Generate Video")
+                runBtn = gr.Button("FaceSwap")
         with gr.Column():
             # gallery = gr.Gallery(label="Generated images", show_label=False)
             result = gr.Video(label="Generated Video", show_label=True)
